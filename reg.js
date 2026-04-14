@@ -13,10 +13,15 @@ document.getElementById("sub").addEventListener("click",function(e){
             email:email,
             pass:pass
         })
-    }).then(res=>res.text())
+    }).then(res=>res.json())
     .then(data=>{
+        if(data.status==="success"){
         console.log(data)
         alert("User Registered Successfully")
+        }
+        else{
+            alert("User Not Created")
+        }
     })
     .catch(err=>{
         console.error(err)
