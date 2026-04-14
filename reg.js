@@ -1,4 +1,4 @@
-document.getElementById("sub").addEventListener("click",function(e){
+document.getElementById("rg").addEventListener("submit",function(e){
     e.preventDefault();
     let name=document.getElementById("name").value;
     let ph=document.getElementById("ph").value;
