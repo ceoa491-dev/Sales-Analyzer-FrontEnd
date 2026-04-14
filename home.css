@@ -2,14 +2,18 @@ body{
     margin: 0;
 }
 .container{
-    display: flex;
-    justify-content: end;
+    display: grid;
+    margin-left: 92%;
+    grid-template-columns: 100px;    
+    grid-template-rows: 90px; 
+    grid-gap: 5px;
+    align-content: center;
 }
 img{
     margin: 5px;
     height: 70px;
     width: 70px;
-    margin-right: 2%;
+    margin-left: 20%;
     transition: all 0.2s ease-in-out;
     
 }
@@ -18,15 +22,22 @@ img:hover{
     width: 80px;
     transform: scale(1.0);
 }
-.la{
-    display: none;
-}
+
 .namel{
     height: 40px;
     width: 120px;
     background-color: black;
     border-radius: 6px;
     color: white;
-    margin-left: 92%;
+    
     font-family: Arial, Helvetica, sans-serif;
+}
+@media(max-width:300px){
+    .container{
+    display: grid;
+    grid-template-columns: 100px;    
+    grid-template-rows: 90px; 
+    grid-gap: 5px;
+    align-content: center;
+}
 }
